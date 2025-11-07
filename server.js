@@ -22,9 +22,9 @@ app.use(cors({
 }));
 
 // api endpoints
-app.use("/api/user", userRouter)
-app.use("/api/admin", adminRouter)
-app.use("/api/doctor", doctorRouter)
+app.use("/user", userRouter)
+app.use("/admin", adminRouter)
+app.use("/doctor", doctorRouter)
 
 app.get("/", (req, res) => {
   res.send("API Working")
